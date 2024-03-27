@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'MegaSena';
+  title = 'Mega';
+  version = '2.0.0'
 }
