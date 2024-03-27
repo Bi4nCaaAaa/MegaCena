@@ -1,15 +1,19 @@
-<div>
-  <h2>Mega Sena</h2>
+<div class="mega-sena-container">
+  <h2 class="title">🎲 Sorteio Milionário 🎲</h2>
 
-  <label for="numerosSorteados">Números Sorteados:</label>
-  <input type="text" id="numerosSorteados" [(ngModel)]="numerosSorteados" />
+  <div class="input-container">
+    <label for="numerosSorteados" class="label">Números Premiados:</label>
+    <input type="text" id="numerosSorteados" [(ngModel)]="numerosSorteados" class="input" />
+  </div>
 
-  <label for="aposta">Sua Aposta:</label>
-  <input type="text" id="aposta" [(ngModel)]="aposta" />
+  <div class="input-container">
+    <label for="aposta" class="label">Faça sua Aposta:</label>
+    <input type="text" id="aposta" [(ngModel)]="aposta" class="input" />
+  </div>
 
-  <button (click)="checkNumeros()">Check</button>
+  <button (click)="checkNumeros()" class="check-button">Verificar Sorte</button>
 
-  <div *ngIf="resultado !== null">
-    <p>Você pegou {{ resultado }} !</p>
+  <div *ngIf="resultado !== null" class="result-container">
+    <p class="result-text">💰 Você acertou {{ resultado }} números! Parabéns! 💰</p>
   </div>
 </div>
